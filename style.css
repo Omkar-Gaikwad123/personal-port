@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,400&family=Nunito+Sans:ital,opsz,wght@1,6..12,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500&family=Montserrat:ital,wght@0,300;0,400;1,400&family=Nunito+Sans:ital,opsz,wght@1,6..12,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: rgb(222, 246, 167);
+    width: 250px;
+    height: 100vh;
+    font-family: 'fira sans', 'sans-serif';
+    transition: transform 0.3 ease-in;
+}
+
+.sidebar nav{
+    padding: 45px;
+}
+
+.sidebar nav li{
+    font-size: 30px;
+    list-style: none;
+    padding: 33px 0;    
+}
+.sidebar nav li a{
+    text-decoration: none;
+}
+.main{
+    background-color: rgb(244, 245, 245);
+    width: 87vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infocontainer{
+    display: flex;
+    background-color: rgb(244, 245, 245);
+    height: 65vh;
+    width: 70vw;
+    margin: 150px 200px auto;
+    justify-content: space-around;
+}
+
+.divInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+.hello{
+    font-size: 65px;   
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+}
+.about{
+    font-size: 30px;
+}
+
+.moreabout{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button{
+    margin-top: 20px;
+    
+}
+
+.btn{
+    padding: 8px;
+    border-radius: 18px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px 5px;
+}
+
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.devpic img{
+    height: 55vh;
+}
+
+/* contact.html form */
+
+.contactform{
+    padding: 0 40px;
+    padding-top: 160px;
+    height: 100vw;
+    width: 100vw;
+    font-family: 'fira sans', 'sans-serif';
+    margin: 0 250px;
+}
+.contactform h2{
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 0;
+}
+.contactform form div{
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{    
+    width: 24vw;
+    border-radius: 4px;
+    margin: 6px 0 0 0;
+    padding: 2px;    
+}
+#emailhelp{
+    font-size: 16px;
+    color: rgb(91, 165, 231);
+    margin: 0 5px;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 25px;
+    margin: 3px 0;
+}
+.btn-sm{
+    font-size: 16px;
+    padding: 10px 18px;
+    margin: 12px 0;
+}
+
+/*carrie.html file*/
+.carrieMain{
+    /*background-color: white;
+    height: 50vh;
+    width: 100vw;*/
+    color: black;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin: 50px 240px;
+  }
+
+  .carrieMain h1{
+    margin: 30px;
+  }
+
+  .carrieItem{
+      margin: 55px;
+  }
+
+  .btn-sm1{
+    color: white;
+    background-color: rgb(19, 14, 19);
+    margin-left: 50px;
+    border-radius: 16px;
+  }
+
+  /*intro.html file*/
+  .introMain{
+    background-color: #e3edf7;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0px 180px;
+  }
+  .intro h1{
+    margin: 12px 30px;
+  }
+  .intro h2{
+    font-family: 'Edu SA Beginner', cursive;
+    margin: 0 30px;
+  }
+
+  .intro p{
+    font-family: 'Edu SA Beginner', cursive;
+    margin: 0 30px;
+  }
+
+  .skillContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 50px;
+   
+  }
+ /*in intro HTML circle*/
+  .skill-1{  
+    margin: 40px 0 0 40px; 
+    width: 160px;
+    height: 160px;
+    /*background-color: blueviolet;*/
+    position: relative;
+  }
+  .outer-1{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+  }
+  .inner-1{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+  }
+  #numberone{
+    font-size: 25px;
+    color: #555;
+  }
+  .circle-1{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 610;
+    stroke-dashoffset:472;
+    animation: anim 2s linear forwards;
+  }
+  .svg-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @keyframes anim{
+    100%{
+        stroke-dashoffset: 63;
+    }
+  }
+ /*CSS circle*/
+  .skill-2{  
+    margin: 40px 0 0 40px; 
+    width: 160px;
+    height: 160px;
+    /*background-color: blueviolet;*/
+    position: relative;
+  }
+  .outer-2{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+  }
+  .inner-2{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+  }
+  #numbertwo{
+    font-size: 25px;
+    color: #555;
+  }
+  .circle-2{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim2 2s linear forwards;
+  }
+  .svg-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @keyframes anim2{
+    100%{
+        stroke-dashoffset: 94;
+    }
+  }
+  /*javascript circle*/
+  .skill-3{  
+    margin: 40px 0 0 40px; 
+    width: 160px;
+    height: 160px;
+    /*background-color: blueviolet;*/
+    position: relative;
+  }
+  .outer-3{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+  }
+  .inner-3{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+  }
+  #numberthree{
+    font-size: 25px;
+    color: #555;
+  }
+  .circle-3{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim3 2s linear forwards;
+  }
+  .svg-3{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @keyframes anim3{
+    100%{
+        stroke-dashoffset: 188;
+    }
+  }
+  /*Bootstrap circle*/
+  .skill-4{  
+    margin: 40px 0 0 40px; 
+    width: 160px;
+    height: 160px;
+    /*background-color: blueviolet;*/
+    position: relative;
+  }
+  .outer-4{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+  }
+  .inner-4{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+  }
+  #numberfour{
+    font-size: 25px;
+    color: #555;
+  }
+  .circle-4{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim4 2s linear forwards;
+  }
+  .svg-4{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @keyframes anim4{
+    100%{
+        stroke-dashoffset: 330;
+    }
+  }
+  /*mySQL circle*/
+  .skill-5{  
+    margin: 40px 0 0 40px; 
+    width: 160px;
+    height: 160px;
+    /*background-color: blueviolet;*/
+    position: relative;
+  }
+  .outer-5{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+  }
+  .inner-5{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+  }
+  #numberfive{
+    font-size: 25px;
+    color: #555;
+  }
+  .circle-5{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim5 2s linear forwards;
+  }
+  .svg-5{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @keyframes anim5{
+    100%{
+        stroke-dashoffset: 188;
+    }
+  }
+  /*C language circle*/
+  .skill-6{  
+    margin: 40px 0 0 40px; 
+    padding: 0 0 0 0px;
+    width: 160px;
+    height: 160px;
+    /*background-color: blueviolet;*/
+    position: relative; 
+  }
+  .outer-6{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+  }
+  .inner-6{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+  }
+  #numbersix{
+    font-size: 25px;
+    color: #555;
+  }
+  .circle-6{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray:610;
+    stroke-dashoffset: 472;
+    animation: anim6 2s linear forwards;
+    
+  }
+  .svg-6{
+    position: absolute;
+    padding: 0 0 0 0;
+    top: 0;
+    left: 0;
+  }
+  @keyframes anim6{
+    100%{
+        stroke-dashoffset: 170;
+    }
+  }
+
+  /*About.html file*/
+  
+  .aboutContainer{
+    margin: 50px 350px;
+    width: 100vw;
+  }
+
+  .aboutContainer p{
+    margin: 10px 0 0 20px;
+    font-size: 18px;
+  }
+
+  .hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+  }
+/*sidebar*/
+  .sidebarGo{
+    transform: translate(-300px, 0px);
+      position: absolute;
+  }
+
+  .cross{
+    margin-left: 200px;
+  }
+
+  @media (max-width : 1615px) {
+    *{ 
+      /*background-color: light-red;*/
+    }
+    
+    /*.sidebar{
+      transform: translate(-300px, 0px);
+      position: absolute;
+    }*/
+  }
+
+
+  
+ 
+
+
+
+ 
+
+
